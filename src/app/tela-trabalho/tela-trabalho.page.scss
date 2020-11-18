@@ -1,0 +1,94 @@
+.titulo{
+    position: relative;
+    top: 25px;
+    text-align: center;
+    line-height: 128.29%;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+ 
+.icon_voltar2{
+    position: absolute;
+    top:10px;
+    left:17px;
+    width: 30px;
+
+
+}
+.list{
+    position: absolute;
+    bottom:50px;
+    left: 100px;
+}
+
+.wraper{
+    display:flex;
+    position: absolute;
+    top:110px;
+    &_input{
+        border: 1px solid #6BF4E4;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 29px;
+        height: 35px;
+    }
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -100px;
+    width: 100%;
+    left: 0;
+    &_item{
+        padding: 21px;
+        margin: 4px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        
+        background-color: #FF989E;
+        border-radius: 16px;
+        font-family: 'Metrophobic', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 128.29%;
+        letter-spacing: 0.11em;
+        color: #FFFFFF; 
+        
+
+        &_value{
+            width: 100%;
+        }
+
+    }
+}
+.btn{
+    background-color: #FF989E;
+    padding: 3px;
+    height:50px ;
+    width: 50px;
+    margin:5px;
+    
+    
+
+    &_first-child{
+        margin-right:5px ;
+    }
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.check{
+    --border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    right:2px;
+    bottom:12px;
+    --background-checked:#FF989E;
+    --border-color-checked:#FF989E;
+    --border-color:#FF989E;
+
+
+}

@@ -1,1 +1,53 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    img{
+        
+    }
+    h1{
+        size: 20px;
+        position: relative;
+        left:20px;
+        bottom:10px;
+        top: 15px;
+       
+    }
+    
+}
+
+.panel{
+    width: 100%;
+    position: fixed;
+   
+
+    img{
+        position: relative;
+        width: 100%;
+    }
+    p{
+        position: relative;
+        font-size: 20px;
+        margin-left: 80px;
+
+    }
+}
+
+.p{
+    position: relative;
+    bottom: 16px;
+    
+}
+
+.botao_entrar{
+    position: relative;
+    border:none;
+    left:105px;
+    width:150px ;
+    --border-radius:30px;
+    
+}
 

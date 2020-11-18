@@ -1,0 +1,21 @@
+
+<ion-content color="tertiary">
+  <div>
+    <h1 class="titulo">Estudos</h1>
+  </div>
+  <img class ="icon_voltar2" src="https://i.imgur.com/vFXns0g.png" routerLink="/tela-inicial">
+  <div class="wraper">
+    <ion-input class="wraper_input" [(ngModel)]="value0" placeholder="       Informe sua tarefa"></ion-input>
+    <ion-button class="wraper_button" (click)="addT()" [disabled] = 'value0.length<2'>Adicionar</ion-button>
+</div>
+<div class="list">
+    <div class="list_item" [class.done]="item.isDone" *ngFor="let item of items0; let ind0 = index;"> 
+        {{item.value}}
+        <div>
+            <img src="https://i.imgur.com/Vg1vwrz.png"  class="btn list_item--delete" (click)="deleteItem(ind0)" (click)="openToast()">
+            <ion-checkbox  class="check"></ion-checkbox>
+        </div>
+    </div>
+</div>
+
+</ion-content>

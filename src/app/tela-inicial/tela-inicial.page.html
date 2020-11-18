@@ -1,0 +1,39 @@
+
+<ion-content class="conteudo" color="tertiary">
+  
+    <p>Bem vindo, ao relloz</p>
+    <div class="usuario">
+        <div class="icone_user">
+            <img src="https://i.imgur.com/rqOf5uj.png">
+        </div>
+    </div>
+    <p class="cat">Selecione Categoria</p>
+
+    <div>
+        <ion-button class="botao_estudar" routerLink="">
+        </ion-button>
+        <ion-button class="botao_esporte"></ion-button>
+        <ion-button class="botao_trabalho"></ion-button>
+        <ion-button class="botao_lazer"></ion-button>
+        <img class="icon_estudar" src="https://i.imgur.com/OjKL3ZU.png" routerLink="/tela-escola">
+        <img class="icon_esporte" src="https://i.imgur.com/ClDKMeQ.png" routerLink="/tela-esporte">
+        <img class="icon_trabalho" src="https://i.imgur.com/42UlZie.png" routerLink="/tela-trabalho">
+        <img class="icon_lazer" src="https://i.imgur.com/HVMZYuV.png" routerLink="/tela-lazer">
+        <img class ="icon_voltar" src="https://i.imgur.com/vFXns0g.png" routerLink="">
+    </div>
+    <div class="wraper">
+        <ion-input class="wraper_input" maxlength ="18" [(ngModel)]="value" placeholder="       Informe sua tarefa"></ion-input>
+        <ion-button class="wraper_button" (click)="addItem()" [disabled] = 'value.length<2'>Adicionar</ion-button>
+    </div>
+    <div class="list">
+        <div class="list_item" [class.done]="item.isDone" *ngFor="let item of items; let ind = index;"> 
+            {{item.value}}
+            <div>
+                <!<button class="btn list_item--done done" (click)="setDone(ind)"><!<done</button>
+                <img src="https://i.imgur.com/Vg1vwrz.png"  class="btn list_item--delete" (click)="deleteItem(ind)" (click)="openToast()">
+                <ion-checkbox  class="check"></ion-checkbox>
+            </div>
+        </div>
+    </div>
+    
+</ion-content>

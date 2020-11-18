@@ -1,5 +1,7 @@
 {
   "name": "ListaAfazeres",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,206 @@
+.conteudo{
+    position: relative;
+    width: 360px;
+    height: 800px;  
+    .botao_voltar{
+        width: 10px;
+    }
+}
+p{
+    position: absolute;
+    width: 246px;
+    height: 29px;
+    left: 17px;
+    top: 67px;
+
+    font-family: 'Metrophobic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 128.29%;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+.usuario{
+    box-sizing: 10px;
+    border-radius: 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 248px;
+    top: 28px;
+
+    background: rgba(161, 110, 231, 0.17);
+
+    .icone_user{
+        position: relative;
+        width: 80px;
+        left: 11px;
+        top:8px;
+        
+    }
+}
+.cat{
+    position: absolute;
+    width: 200px;
+    height: 21px;
+    left: 17px;
+    top: 128px;
+
+    font-family: 'Metrophobic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 152.79%;
+    color: #FFFFFF;
+}
+.botao_estudar{
+    position: absolute;
+    --border-radius: 50px;
+    width: 50px;
+    height: 51px;
+    left: 29px;
+    top: 173px;
+    --background: #6BF4E4;
+  
+}
+.botao_esporte{
+    --border-radius: 50px;
+    position: absolute;
+    width: 50px;
+    height: 51px;
+    left: 105px;
+    top: 175px;
+    --background: #3658D0;
+}
+.botao_trabalho{
+    position: absolute;
+    width: 50px;
+    height: 51px;
+    left: 184px;
+    top: 173px;
+    --background: #FF989E;
+    --border-radius: 50px;
+}
+.botao_lazer{
+    position: absolute;
+    width: 50px;
+    height: 51px;
+    left: 261px;
+    top: 174px;
+    --background: #A16EE7;
+    --border-radius: 50px;
+}
+
+.icon_estudar{
+    position: absolute;
+    width: 50px;
+    height: 51px;
+    left: 30px;
+    top: 176px;
+    border-radius: 21px;
+}
+.icon_esporte{
+    position: absolute;
+    width: 48px;
+    height: 56px;
+    left: 108px;
+    top: 180px;
+    border-radius: 111px;
+}
+.icon_trabalho{
+    position: absolute;
+    width: 44px;
+    height: 47px;
+    left: 189px;
+    top: 179px;
+    border-radius: 16px;
+
+}
+.icon_lazer{
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    left: 269px;
+    top: 185px;
+
+}
+.icon_voltar{
+    position: absolute;
+    width: 39px;
+    left: 10px;
+    top:28px;
+}
+
+.list{
+    position: absolute;
+    bottom:50px;
+    left: 100px;
+}
+
+.wraper{
+    display:flex;
+    position: absolute;
+    top:265px;
+    &_input{
+        border: 1px solid #6BF4E4;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 29px;
+        height: 35px;
+    }
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -320px;
+    width: 100%;
+    left: 0;
+    &_item{
+        padding: 21px;
+        margin: 4px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        
+        background-color: #A16EE7;
+        border-radius: 16px;
+        font-family: 'Metrophobic', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        //line-height: 128.29%;
+        
+        color: #FFFFFF; 
+        
+
+        &_value{
+            width: 100%;
+        }
+
+    }
+}
+.btn{
+    background-color:  #A16EE7;
+    padding: 3px;
+    height:50px ;
+    width: 50px;
+    margin:5px;
+    
+    
+
+    &_first-child{
+        margin-right:5px ;
+    }
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.check{
+    --border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    right:2px;
+    bottom:12px;
+}
